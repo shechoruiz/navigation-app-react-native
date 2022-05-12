@@ -1,10 +1,17 @@
 import {useNavigation} from '@react-navigation/native';
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Button, Text, View} from 'react-native';
 import {styles} from '../themes/apptheme';
 
 const Pagina2Screen = () => {
   const navigator = useNavigation();
+
+  useEffect(() => {
+    navigator.setOptions({
+      headerBackTitle: '',
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <View style={styles.globalMargin}>

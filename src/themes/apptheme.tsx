@@ -6,5 +6,6 @@ export const styles = StyleSheet.create({
   },
   text: {
     marginBottom: 15,
+    fontSize: 30,
   },
 });
