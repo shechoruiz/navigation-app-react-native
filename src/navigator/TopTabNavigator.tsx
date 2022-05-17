@@ -3,9 +3,9 @@ import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs
 import ChatsScreen from '../screens/ChatsScreen';
 import ContactsScreen from '../screens/ContactsScreen';
 import AlbumsScreen from '../screens/AlbumsScreen';
+import Icon from 'react-native-vector-icons/Ionicons';
 // import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {colors} from '../themes/apptheme';
-import {Text} from 'react-native';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -38,16 +38,16 @@ const TopTabNavigator = () => {
           let iconName: string = '';
           switch (route.name) {
             case 'Chats':
-              iconName = 'Ch';
+              iconName = 'chatbox-ellipses-outline';
               break;
             case 'Contacts':
-              iconName = 'Co';
+              iconName = 'people-outline';
               break;
             case 'Albums':
-              iconName = 'Al';
+              iconName = 'albums-outline';
               break;
           }
-          return <Text style={{color: props.color}}>{iconName}</Text>;
+          return <Icon name={iconName} size={20} color={props.color} />;
         },
       })}>
       <Tab.Screen name="Chats" component={ChatsScreen} />

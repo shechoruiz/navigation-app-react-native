@@ -46,5 +46,6 @@ export const styles = StyleSheet.create({
   },
   menuTexto: {
     fontSize: 20,
+    marginLeft: 10,
   },
 });
