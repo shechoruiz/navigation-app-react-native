@@ -50,13 +50,13 @@ const MenuInterno = ({navigation}: DrawerContentComponentProps) => {
       <View style={styles.menuContainer}>
         <TouchableOpacity
           onPress={() => navigation.navigate('Tabs')}
-          style={{...styles.menuButton, flexDirection: 'row'}}>
+          style={styles.menuButton}>
           <Icon name="compass-outline" size={20} color={colors.primary} />
           <Text style={styles.menuTexto}>Navegación</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate('SettingsScreen')}
-          style={{...styles.menuButton, flexDirection: 'row'}}>
+          style={styles.menuButton}>
           <Icon name="settings-outline" size={20} color={colors.primary} />
           <Text style={styles.menuTexto}>Ajustes</Text>
         </TouchableOpacity>

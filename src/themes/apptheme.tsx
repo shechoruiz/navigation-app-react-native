@@ -43,6 +43,7 @@ export const styles = StyleSheet.create({
   },
   menuButton: {
     marginVertical: 10,
+    flexDirection: 'row',
   },
   menuTexto: {
     fontSize: 20,
